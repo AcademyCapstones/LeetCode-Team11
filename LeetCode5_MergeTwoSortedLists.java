@@ -32,3 +32,41 @@ public class LeetCode5_MergeTwoSortedLists {
     }
 
 }
+
+
+//Pseudo Code : Create a class List Node, Pseudo code
+/**
+* Definition for singly-linked list in the List Node class
+* public class ListNode {
+*     int val;
+*     ListNode next;
+*     ListNode() {}
+*     ListNode(int val) { this.val = val; }
+*     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+* }
+*/
+
+//FUNCTION mergeTwoLists(list1, list2):
+//    CREATE dummyHead = new ListNode(0)
+//    SET current = dummyHead
+//
+//    WHILE list1 != NULL AND list2 != NULL:
+//        IF list1.val <= list2.val:
+//            current.next = list1
+//            list1 = list1.next
+//        ELSE:
+//            current.next = list2
+//            list2 = list2.next
+//        END IF
+//        current = current.next
+//    END WHILE
+//
+//    // Attach remaining nodes
+//    IF list1 != NULL:
+//        current.next = list1
+//    ELSE IF list2 != NULL:
+//        current.next = list2
+//    END IF
+//
+//    RETURN dummyHead.next
+//END FUNCTION
